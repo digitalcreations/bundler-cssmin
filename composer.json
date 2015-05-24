@@ -1,0 +1,35 @@
+{
+    "name": "dc/bundler-cssmin",
+    "description": "CSSMin support for dc/bundler",
+    "minimum-stability": "stable",
+    "homepage": "https://github.com/digitalcreations/bundler-cssmin",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Digital Creations AS",
+            "homepage": "http://www.digitalcreations.no",
+            "role": "Company"
+        },
+        {
+            "name": "Vegard Andreas Larsen",
+            "homepage": "http://vega.rd.no",
+            "role": "Developer"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/digitalcreations/bundler-cssmin/issues",
+        "source": "https://github.com/digitalcreations/bundler-cssmin"
+    },
+    "autoload": {
+        "psr-4": {
+            "DC\\Bundler\\CSSMin\\": "src/"
+        }
+    },
+    "require": {
+        "dc/bundler": "dev-master",
+        "natxet/CssMin": "3.*"
+    },
+    "suggest": {
+        "dc/ioc": "dev-master"
+    }
+}
