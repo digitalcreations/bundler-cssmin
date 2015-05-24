@@ -54,7 +54,7 @@ class CSSMinTransformer implements \DC\Bundler\ITransformer {
     public static function registerWithContainer(\DC\IoC\Container $container, $filters = [], $plugins = []) {
         $container
             ->register(function() use ($filters, $plugins) {
-                return new \DC\Bundler\CSSMin($filters, $plugins);
+                return new \DC\Bundler\CSSMin\CSSMinTransformer($filters, $plugins);
             })
             ->to('\DC\Bundler\ITransformer');
     }
